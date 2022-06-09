@@ -19,11 +19,12 @@
     --brand-paragraph: #8893AF;
 
     /* Font size */
-    --font-large: 48px;
-    --font-medium: 28px;
-    --font-regular: 18px;
-    --font-small: 16px;
-    --font-micro: 14px;
+    --font-size: 62.5%; /*1rem = 10px*/
+    --font-large: 4.8rem;
+    --font-medium: 2.8rem;
+    --font-regular: 1.8rem;
+    --font-small: 1.6rem;
+    --font-micro: 0.9rem;
 
     /* Font weight */
     --weight-bold: 700;
@@ -31,7 +32,7 @@
     --weight-regular: 400;
 
     /* Size */
-    --size-border-radius: 4px;
+    --size-border-radius: 0.4rem;
 
     /* Animation duration */
     --animation-duration: 300ms;
@@ -64,7 +65,7 @@ button {
     cursor: pointer;
     border: none;
     outline: none;
-    padding: 0px;
+    padding: 0;
 }
 
 /* Typography */
@@ -72,26 +73,67 @@ h1 {
     font-size: var(--font-large);
     font-weight: var(--weight-bold);
     color: var(--brand-headline);
-    margin: 16px 0px;
+    margin: 1.6rem 0;
 }
 
 h2 {
     font-size: var(--font-medium);
     font-weight: var(--weight-semi-bold);
     color: var(--brand-headline);
-    margin: 8px 0px;
+    margin: 0.8rem 0;
 }
 
 h3 {
     font-size: var(--font-regular);
     font-weight: var(--weight-regular);
     color: var(--brand-headline);
-    margin: 8px 0;
+    margin: 0.6rem 0;
 }
 
 p {
     font-size: var(--font-regular);
     font-weight: var(--weight-regular);
     color: var(--brand-paragraph);
-    margin: 4px 0;
+    margin: 0.4rem 0;
+}
+
+/* Navbar */
+
+#navbar{
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background-color: var(--brand-background);
+    color: var(--brand-paragraph);
+    padding: 0.8rem;
+}
+
+.navbar__logo{
+    margin-left: 1.5rem;
+    flex-grow: 2;
+}
+.navbar__logo a{
+    color: var(--brand-primary);
+}
+
+.navbar__menu{
+    display: flex;
+    align-items: flex-end;
+    margin-right: 0.8rem;
+}
+
+.navbar__menu__item{
+    padding: 0.6rem;
+    margin: 0.6rem;
+    font-size: var(--font-micro);    
+}
+
+.navbar__button{
+    border: 0.1rem solid var(--brand-primary);
+    padding: 0.6rem;
+    margin-right: 1.5rem;
+    color: var(--brand-primary);
+    border-radius: 0.3rem;
+    font-size: var(--font-micro);
 }
