@@ -16,12 +16,12 @@
     --brand-white: #ffffff;
     --brand-black: #000000;
     --brand-headline: #CDD8F4;
-    --brand-paragraph: #8893AF;
+    --brand-paragraph: #8892b0;
 
     /* Font size */
     --font-size: 62.5%; /*1rem = 10px*/
     --font-large: 3.8rem;
-    --font-medium: 1.4rem;
+    --font-medium: 2.4rem;
     --font-regular: 1.1rem;
     --font-small: 1rem;
     --font-micro: 0.9rem;
@@ -49,6 +49,7 @@
 body{
     font-family: "Open Sans", sans-serif;
     cursor: default;
+    background-color: var(--brand-background);
 }
 
 a {
@@ -60,12 +61,16 @@ ul {
     padding: 0;
 }
 
-button {
+.button {
     background-color: transparent;
     cursor: pointer;
-    border: none;
     outline: none;
-    padding: 0;
+    border: 0.1rem solid var(--brand-primary);
+    padding: 0.6rem;
+    margin-right: 1.5rem;
+    color: var(--brand-primary);
+    border-radius: 0.3rem;
+    font-size: var(--font-micro);
 }
 
 /* Typography */
@@ -94,7 +99,6 @@ p {
     font-size: var(--font-regular);
     font-weight: var(--weight-regular);
     color: var(--brand-paragraph);
-    margin: 0.4rem 0;
 }
 
 /* Navbar */
@@ -136,4 +140,39 @@ p {
     color: var(--brand-primary);
     border-radius: 0.3rem;
     font-size: var(--font-micro);
+}
+
+/* Home */
+
+#home{
+    background-color: var(--brand-background);
+    padding: 4rem 6rem;
+    padding-top: 12rem;
+    padding-left: 12rem;
+}
+
+.home__container{
+    width: 80%;
+}
+
+.home__container h1{
+    margin: 0;
+}
+
+.home__container h3{
+    color: var(--brand-primary);
+}
+
+.home__container h2{
+    font-size: var(--font-large);
+    color: var(--brand-paragraph);
+    margin-bottom: 2rem;
+}
+
+.home__container p{
+    width: 35rem;
+}
+
+.home__button{
+    margin-top: 2.5rem;
 }
