@@ -1,0 +1,97 @@
+/* Global Settings */
+
+:root{
+    /* Primary Brands */
+    --brand-background: #0A2135;
+    --brand-primary: #5ADE7C;
+
+    /* Neon Brands */
+    --brand-pink: #FF1178;
+    --brand-red: #FE0000;
+    --brand-yellow: #FFF205;
+    --brand-blue: #01FFF4;
+    --brand-green: #7CFF01;
+
+    /* Secondary Brands */
+    --brand-white: #ffffff;
+    --brand-black: #000000;
+    --brand-headline: #CDD8F4;
+    --brand-paragraph: #8893AF;
+
+    /* Font size */
+    --font-large: 48px;
+    --font-medium: 28px;
+    --font-regular: 18px;
+    --font-small: 16px;
+    --font-micro: 14px;
+
+    /* Font weight */
+    --weight-bold: 700;
+    --weight-semi-bold: 600;
+    --weight-regular: 400;
+
+    /* Size */
+    --size-border-radius: 4px;
+
+    /* Animation duration */
+    --animation-duration: 300ms;
+}
+
+/* Universal Tags */
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body{
+    font-family: "Open Sans", sans-serif;
+    cursor: default;
+}
+
+a {
+    text-decoration: none;
+}
+
+ul {
+    list-style: none;
+    padding: 0;
+}
+
+button {
+    background-color: transparent;
+    cursor: pointer;
+    border: none;
+    outline: none;
+    padding: 0px;
+}
+
+/* Typography */
+h1 {
+    font-size: var(--font-large);
+    font-weight: var(--weight-bold);
+    color: var(--brand-headline);
+    margin: 16px 0px;
+}
+
+h2 {
+    font-size: var(--font-medium);
+    font-weight: var(--weight-semi-bold);
+    color: var(--brand-headline);
+    margin: 8px 0px;
+}
+
+h3 {
+    font-size: var(--font-regular);
+    font-weight: var(--weight-regular);
+    color: var(--brand-headline);
+    margin: 8px 0;
+}
+
+p {
+    font-size: var(--font-regular);
+    font-weight: var(--weight-regular);
+    color: var(--brand-paragraph);
+    margin: 4px 0;
+}
