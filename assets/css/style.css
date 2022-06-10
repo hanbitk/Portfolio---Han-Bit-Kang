@@ -180,6 +180,7 @@ section img{
 
 .home__container h3{
     color: var(--brand-primary);
+    margin-left: 0.15rem;
 }
 
 .home__container h2{
@@ -190,8 +191,10 @@ section img{
 
 .home__container p{
     width: 35rem;
+    margin-left: 0.15rem;
 }
 
 .home__button{
     margin-top: 2.5rem;
+    margin-left: 0.15rem;
 }
