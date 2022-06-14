@@ -87,13 +87,13 @@ h2 {
 
 h3 {
     font-size: var(--font-regular);
-    font-weight: var(--weight-regular);
+    font-weight: var(--weight-semi-bold);
     color: var(--brand-headline);
 }
 
 p {
     font-size: var(--font-regular);
-    font-weight: var(--weight-regular);
+    font-weight: var(--weight-small);
     color: var(--brand-paragraph);
 }
 
@@ -161,7 +161,7 @@ ul li:hover ~ .mousepointer{
     background-color: var(--brand-primary);
 }
 
-ul li a:hover{
+li.navbar__menu__item a:hover{
     font-weight: var(--weight-bold);
 }
 
@@ -228,19 +228,16 @@ ul li a:hover{
 /* About Me */
 
 #about{
-    border: 1px solid red;
     padding: 60px;
     padding-top: 100px;
 }
 
 .about__container{
-    /* border: 1px solid blue; */
     max-width: 1200px;
     margin: 0 auto;
 }
 
 .about__content{
-    /* border: 1px solid white; */
     padding-left: 60px;
 }
 
@@ -266,7 +263,7 @@ ul li a:hover{
 }
 
 .about__title__line{
-    width: 60%;
+    width: 40%;
     height: 1px;
     background-color: var(--brand-pink);
     opacity: 0.5;
@@ -286,13 +283,13 @@ ul li a:hover{
     align-items: center;
     flex-grow: 1;
     position: relative;
+    margin: 20px;
 }
 
 .about__context img{
     width: 250px;
     height: 250px;
     object-fit: cover;
-    /* border-radius: 50%; */
     object-position: 0% 20%;
     align-items: center;
     z-index: 1;
@@ -312,15 +309,16 @@ ul li a:hover{
     width: 250px;
     height: 250px;
     position: absolute;
-    top: 105px;
-    left: 60px;
+    top: 102px;
+    left: 26px;
     border-radius: 2px;
 }
 
 .about__context__img:hover .about__context__imgbox{
-    transition: 0.3s ease-in-out;
+    transition: 0.4s ease-in-out;
     top: 110px;
-    left: 65px;
+    left: 35px;
+    border: 1px solid var(--brand-pink);
 }
 
 .about__check{
@@ -329,6 +327,7 @@ ul li a:hover{
 }
 
 .about__context__description{
+    padding-left: 20px;
     margin-left: 40px;
     flex-grow: 2;
 }
@@ -338,4 +337,24 @@ ul li a:hover{
     width: 500px;
     margin: 0;
     margin-bottom: 20px;
+}
+
+.about__context__button{
+    display: flex;
+    margin-top: 10px;
+}
+
+.about__context__button a{
+    font-size: var(--font-small);
+}
+
+.about__context__button a:hover{
+    color: var(--brand-pink);
+    background-color: transparent;
+    cursor: pointer;
+    outline: none;
+    border: 1px solid var(--brand-pink);
+    margin-right: 15px;
+    border-radius: 4px;
+    font-size: var(--font-small);
 }
