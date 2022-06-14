@@ -270,6 +270,7 @@ li.navbar__menu__item a:hover{
 }
 
 .about__context{
+    padding-top: 20px;
     display: flex;
     justify-content: space-between;
     align-items: center;
@@ -357,4 +358,102 @@ li.navbar__menu__item a:hover{
     margin-right: 15px;
     border-radius: 4px;
     font-size: var(--font-small);
+}
+
+/* Skills */
+#skills{
+    padding: 60px;
+    padding-top: 80px;
+}
+
+.skills__container{
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 60px;
+}
+
+.skills__content{
+    padding-left: 60px;
+}
+
+.skills__context{
+    text-align: center;
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    grid-auto-flow: column;
+    padding: 20px;
+}
+
+.skills__title{
+    display: flex;
+    align-items: center;
+    padding: 10px;
+    margin-left: 10px;
+}
+
+.skills__title h2{
+    margin-right: 10px;
+    font-size: var(--font-medium);
+    color: var(--brand-primary);
+}
+
+.skills__title__number{
+    color: var(--brand-pink);
+    font-size: var(--font-regular);
+    margin-right: 8px;
+    font-weight: bold;
+}
+
+.skills__title__line{
+    width: 40%;
+    height: 1px;
+    background-color: var(--brand-pink);
+    opacity: 0.5;
+}
+
+.skills__context__box{
+    display: grid;
+    grid-template-rows: 2fr;
+    padding: 15px;
+    flex: 1 1 0;
+}
+
+.skills__context__title h2{
+    height: 86px;
+}
+
+.skills__context__title p{
+    margin-top: 10px;
+    font-size: var(--font-micro);
+    color: var(--brand-primary);
+}
+
+.skills__context__items ul{
+    margin-top: 25px;
+    padding: 15px;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    padding: 10px;
+}
+
+.skills__context__item{
+    width: 50px;
+    height: 50px;
+}
+
+.skills__context__items ul li svg{
+    width: 50px;
+    height: 50px;
+    fill: var(--brand-paragraph);
+}
+
+.skills__context__items ul li svg:hover{
+    transition: 0.5s;
+    fill: var(--brand-primary);
+}
+
+.skills__context__item:nth-child(1) path:nth-child(1):hover,
+.skills__context__item:nth-child(2) path:nth-child(1):hover{
+    fill: var(--brand-primary);
 }
