@@ -15,6 +15,7 @@
     /* Secondary Brands */
     --brand-white: #ffffff;
     --brand-black: #000000;
+    --brand-dark-blue: #072b4a;
     --brand-headline: #CDD8F4;
     --brand-paragraph: #8892b0;
 
@@ -506,12 +507,12 @@ li.navbar__menu__item a:hover{
     opacity: 0.5;
 }
 
-.projects__context{
+/* .projects__context{
     display: flex;
     flex-wrap: wrap;
     justify-content: center;
     opacity: 1;
-    transition: all 300mx ease-out;
+    transition: all 300ms ease-out;
 }
 
 .projects__context.anim-out {
@@ -527,7 +528,7 @@ li.navbar__menu__item a:hover{
     width: 280px;
     height: 250px;
     margin: 2px;
-    background-color: var(--brand-headline);
+    background-color: var(--brand-dark-blue);
     opacity: 0.7;
     margin: 10px;
     border-radius: 3px;
@@ -583,4 +584,71 @@ li.navbar__menu__item a:hover{
     transform: translateX(-50%);
     margin-top: 8px;
     background-color: var(--brand-white);
+} */
+
+.projects__context{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    opacity: 1;
+    transition: all 300ms ease-out;
+}
+
+.projects__context.anim-out {
+    opacity: 0;
+    transform: scale(0.96) translateY(40px);
+}
+
+.project {
+    /* border: 1px solid blue; */
+    position: relative;
+    display: flex;
+    width: 280px;
+    height: 290px;
+    background-color: var(--brand-dark-blue);
+    /* border: 2px solid var(--brand-dark-blue); */
+    margin: 10px;
+    border-radius: 3px;
+    transition: 300ms;
+}
+
+.project__description{
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    text-align: left;
+    padding: 10px;
+    width: 100%;
+    height: 100%;
+}
+
+.project__description svg{
+    height: 30px;
+    width: 30px;
+    fill: var(--brand-primary);
+}
+
+.project__description h2{
+    font-size: 20px;
+    color: var(--brand-headline);
+    margin-block: 10px;
+}
+
+.project__description p:nth-child(3){
+    flex-grow: 2;
+    font-size: var(--font-small);
+    margin-bottom: 10px;
+}
+
+.project__description p:nth-child(4){
+    font-size: var(--font-micro);
+}
+
+.project__check{
+    color: var(--brand-primary);
+    margin-right: 5px;
+}
+
+.project:hover{
+    transform:scale(1.11);
 }
