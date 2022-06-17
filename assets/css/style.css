@@ -579,6 +579,7 @@ li.navbar__menu__item a:hover{
 #contact{
     padding: 60px;
     height: 100%;
+    margin-bottom: 100px;
 }
 
 .contact__container{
@@ -623,11 +624,48 @@ li.navbar__menu__item a:hover{
 }
 
 .contact__context p{
-    width: 800px;
+    width: 600px;
     margin: 15px auto 50px auto;
 }
 
-.contact__container a.button{
+.contact__context .button{
     padding: 15px;
-    font-size: 25px;
+    font-size: 15px;
+}
+
+.contact__context a:hover{
+    color: var(--brand-pink);
+    background-color: transparent;
+    cursor: pointer;
+    outline: none;
+    border: 1px solid var(--brand-pink);
+}
+
+/* Footer */
+
+#footer{
+    padding: 10px;
+    text-align: center;
+}
+
+#footer p{
+    font-weight: var(--weight-semi-bold);
+    color: var(--brand-primary);
+    font-size: var(--font-micro);
+}
+
+.footer__icon{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.footer__icon li{
+    padding: 5px;
+    margin-right: 5px;
+}
+
+.footer__icon li i{
+    font-size: 20px;
+    color: var(--brand-primary);
 }
