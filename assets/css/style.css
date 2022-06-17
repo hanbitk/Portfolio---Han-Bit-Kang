@@ -372,7 +372,7 @@ li.navbar__menu__item a:hover{
 }
 
 .skills__content{
-    padding-left: 60px;
+    padding-left: 90px;
 }
 
 .skills__context{
@@ -469,7 +469,7 @@ li.navbar__menu__item a:hover{
 }
 
 .projects__content{
-    padding-left: 120px;
+    padding-left: 150px;
 }
 
 .projects__context{
@@ -572,4 +572,62 @@ li.navbar__menu__item a:hover{
 
 .project:hover{
     transform:scale(1.11);
+}
+
+/* Contact */
+
+#contact{
+    padding: 60px;
+    height: 100%;
+}
+
+.contact__container{
+    max-width: 1200px;
+    margin: 0 auto;
+}
+
+.contact__content{
+    padding-left: 210px;
+}
+
+.contact__title{
+    display: flex;
+    align-items: center;
+    padding: 10px;
+    margin-left: 10px;
+}
+
+.contact__title h2{
+    margin-right: 10px;
+    font-size: var(--font-medium);
+    color: var(--brand-primary);
+}
+
+.contact__title__number{
+    color: var(--brand-pink);
+    font-size: var(--font-regular);
+    margin-right: 8px;
+    font-weight: bold;
+}
+
+.contact__title__line{
+    width: 40%;
+    height: 1px;
+    background-color: var(--brand-pink);
+    opacity: 0.5;
+}
+
+.contact__context{
+    padding: 15px;
+    text-align: center;
+}
+
+.contact__context p{
+    width: 800px;
+    margin: 15px auto 50px auto;
+}
+
+.contact__container a.button{
+    padding: 15px;
+    font-size: 25px;
 }
