@@ -669,3 +669,7 @@ li.navbar__menu__item a:hover{
     font-size: 20px;
     color: var(--brand-primary);
 }
+
+.footer__icon li i:hover{
+    color: var(--brand-pink);
+}
