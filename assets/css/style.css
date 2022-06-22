@@ -46,6 +46,14 @@
     box-sizing: border-box;
 }
 
+html.sr .project{
+    visibility: hidden;
+}
+
+html{
+    scroll-behavior: smooth;
+}
+
 body{
     font-family: "Open Sans", sans-serif;
     cursor: default;
@@ -143,14 +151,44 @@ p {
     align-items: center;
     background-color: var(--brand-background);
     padding: 8px;
+    position: fixed;
+    z-index: 9;
+    top: 0;
+    left: 0;
+    transition: 0.9s;
+}
+
+#navbar.sticky{
+    padding: 5px;
+    background: var(--brand-dark-blue);
+    opacity: 0.9;
+}
+
+#navbar.sticky ul li a{
+    color: var(--brand-white);
+}
+
+#navbar.sticky ul li a:hover{
+    color: var(--brand-primary);
+}
+
+#navbar.sticky ul li a.button{
+    color: var(--brand-primary);
+}
+
+#navbar.sticky ul li a.button:hover{
+    border: 1px solid var(--brand-pink);
+    color: var(--brand-pink);
 }
 
 .navbar__logo{
     margin-left: 15px;
     flex-grow: 2;
+    position: relative;
 }
 .navbar__logo a{
     color: var(--brand-primary);
+    position: relative;
 }
 
 ul.navbar__menu{
@@ -161,6 +199,7 @@ ul.navbar__menu{
 }
 
 .navbar__menu__item{
+    position: relative;
     padding: 10px;
     margin: 10px;
     font-size: var(--font-small);    
@@ -168,6 +207,11 @@ ul.navbar__menu{
 
 .navbar__menu__item a{
     color: var(--brand-paragraph);
+    position: relative;
+}
+
+.navbar__menu__item a:hover{
+    color: var(--brand-primary);
 }
 
 .navbar__button{
@@ -177,25 +221,18 @@ ul.navbar__menu{
     color: var(--brand-primary);
     border-radius: 4px;
     font-size: var(--font-small);
-}
-
-.mousepointer{
-    position: fixed;
-    width: 15px;
-    height: 15px;
-    border-radius: 50%;
-    background-color: var(--brand-pink);
-    transition: 0.1s;
-    transform: translate(-50%, -50%);
-    pointer-events: none;
-    mix-blend-mode: difference;
-    z-index: 2;
+    position: relative;
 }
 
 .navbar__menu li:hover ~ .mousepointer{
     transition: 0.2s;
     transform: scale(4);
     background-color: var(--brand-primary);
+}
+
+a.navbar__menu__item.button:hover{
+    border: 1px solid var(--brand-pink);
+    color: var(--brand-pink);
 }
 
 /* li.navbar__menu__item a:hover{
@@ -261,6 +298,11 @@ ul.navbar__menu{
     margin-top: 50px;
     margin-left: 3.5px;
     font-size: var(--font-small);
+}
+
+.home__content .button:hover{
+    border: 1px solid var(--brand-pink);
+    color: var(--brand-pink);
 }
 
 /* ***About Me*** */
@@ -504,6 +546,10 @@ ul.navbar__menu{
     transform:scale(1.11);
 }
 
+.project:hover h2{
+    color: var(--brand-pink);
+}
+
 /* ***Contact*** */
 
 #contact{
@@ -569,4 +615,18 @@ ul.navbar__menu{
 
 .footer__icon li i:hover{
     color: var(--brand-pink);
+}
+
+.mousepointer{
+    position: fixed;
+    width: 25px;
+    height: 25px;
+    border-radius: 50%;
+    /* background-color: var(--brand-pink); */
+    border: 1px solid var(--brand-yellow);
+    transition: 0.1s;
+    transform: translate(-50%, -50%);
+    pointer-events: none;
+    mix-blend-mode: normal;
+    z-index: 99999;
 }
