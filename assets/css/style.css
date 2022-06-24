@@ -186,14 +186,54 @@ p {
     flex-grow: 2;
     position: relative;
 }
-/* .navbar__logo a{
+
+.logo{
+    border: 1px solid blue;
     position: relative;
-} */
+    display: inline-block;
+}
 
 .logo img{
-    position: relative;
     width: 100px;
     height: 100px;
+}
+
+.logo img:nth-child(1){
+    opacity: 0.8;   
+}
+
+/* .logo .hover__logo{
+    display: none;
+    position: absolute;
+    top: 0;
+    left: 0;
+    z-index: 99;
+}
+
+.logo:hover .hover__logo{
+    display: inline;
+    opacity: 1;
+}*/
+
+.power__button{
+    border: 1px solid red;
+    display: inline-block;
+    text-align: left;
+}
+
+.navbar__logo i{
+    color: var(--brand-headline);
+    cursor: pointer;
+    opacity: 0.8;
+    font-size: var(--font-micro);
+    margin-right: 3px;
+}
+
+.on__off{
+    color: var(--brand-headline);
+    opacity: 0.8;
+    font-size: var(--font-micro);
+    text-transform: uppercase;
 }
 
 ul.navbar__menu{
