@@ -38,6 +38,20 @@ function changeLogo(){
 
 /***********************************************************/
 
+// Navbar toggle button for small screen
+const navbarMenu = document.querySelector('.navbar__menu');
+const navbarToggleBtn = document.querySelector('.navbar__toggle-btn');
+
+navbarToggleBtn.addEventListener('click', () => {
+        navbarMenu.classList.toggle('open');
+});
+
+
+
+
+
+/***********************************************************/
+
 // ScrollReveal
 ScrollReveal().reveal('#about', {duration: 2000});
 ScrollReveal().reveal('#skills', {duration: 2000});
