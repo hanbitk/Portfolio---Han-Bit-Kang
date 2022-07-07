@@ -58,3 +58,54 @@ ScrollReveal().reveal('#skills', {duration: 2000});
 ScrollReveal().reveal('#projects', {duration: 2000});
 ScrollReveal().reveal('#contact', {duration: 2000});
 ScrollReveal().reveal('.project', {interval: 200});
+
+/***********************************************************/
+
+
+// Logo blinking animation
+
+function show(){
+	if (document.getElementById)
+	document.getElementById("logo__off").style.visibility = "visible";
+}
+
+// blink "off" state
+function hide(){
+	if (document.getElementById)
+	document.getElementById("logo__off").style.visibility = "hidden";
+}
+
+// toggle "on" and "off" states every 450 ms to achieve a blink effect
+// end after 2000 ms
+for (var i = 100; i < 2000; i = i + 350){
+	setTimeout(hide, i);
+	setTimeout(show, i + 100);
+}
+
+// Turn light on/off message
+
+function showHideMessage(elem){
+    const onOff = document.querySelector('#onoff');
+
+    const showMessage = setInterval(function(){
+        onOff.textContent = 'turn the light on';
+        onOff.classList.add('on__off');
+        clearInterval(showMessage);
+    }, 1000);
+    
+    const hideMessage = setInterval(function(){
+        elem.style.opacity = 1;
+        if(elem.style.opacity == 1){
+        onOff.textContent = '';
+        onOff.classList.remove('on__off');
+        clearInterval(hideMessage);
+    }
+    },1500)
+}
+
+showHideMessage(onoff);
+
+
+
+
+
