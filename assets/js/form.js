@@ -3,6 +3,7 @@ window.addEventListener("DOMContentLoaded", function () {
     form.addEventListener('submit', message);
 });
 
+// SUCCESS DANGER MESSAGE 
 
 function message(e){
     e.preventDefault();
@@ -25,9 +26,38 @@ function message(e){
             name.value = '';
             email.value = '';
             message.value = '';
-            window.location = 'form.html';
+            window.location = 'index.html';
         }, 3000);
 
         
     }
 }
+
+// SEND EMAIL GOOGLE
+
+window.onload = function(){
+    document.getElementById('form').addEventListener('submit', function(e){
+        e.preventDefault();
+        var params = {
+            from_name : document.getElementById('name').value,
+            email_id : document.getElementById('email').value,
+            message : document.getElementById('message').value
+        };
+    
+        emailjs.send('service_zqvzkqi', 'template_oihu3ts', params).then(function (res){
+            console.log('Success! ' + res.status);
+        });
+    })
+}
+
+// function sendMail(){
+//     var params = {
+//         from_name : document.getElementById('name').value,
+//         email_id : document.getElementById('email').value,
+//         message : document.getElementById('message').value
+//     };
+
+//     emailjs.send('service_zqvzkqi', 'template_oihu3ts', params).then(function (res){
+//         console.log('Success! ' + res.status);
+//     });
+// };

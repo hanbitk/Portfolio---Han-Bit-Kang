@@ -46,10 +46,6 @@ navbarToggleBtn.addEventListener('click', () => {
         navbarMenu.classList.toggle('open');
 });
 
-
-
-
-
 /***********************************************************/
 
 // ScrollReveal
@@ -77,7 +73,7 @@ function hide(){
 
 // toggle "on" and "off" states every 450 ms to achieve a blink effect
 // end after 2000 ms
-for (var i = 100; i < 2000; i = i + 350){
+for (var i = 100; i < 2200; i = i + 350){
 	setTimeout(hide, i);
 	setTimeout(show, i + 100);
 }
@@ -88,7 +84,7 @@ function showHideMessage(elem){
     const onOff = document.querySelector('#onoff');
 
     const showMessage = setInterval(function(){
-        onOff.textContent = 'turn the light on';
+        onOff.textContent = 'turn on the light';
         onOff.classList.add('on__off');
         clearInterval(showMessage);
     }, 1000);
@@ -100,7 +96,7 @@ function showHideMessage(elem){
         onOff.classList.remove('on__off');
         clearInterval(hideMessage);
     }
-    },1500)
+    },2200)
 }
 
 showHideMessage(onoff);

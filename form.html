@@ -25,9 +25,17 @@
 
         <script src="assets/js/form.js"></script>
         <script src="assets/js/mousepointer.js" defer></script>
+        <script type="text/javascript"
+        src="https://cdn.jsdelivr.net/npm/@emailjs/browser@3/dist/email.min.js"></script>
+        
+        <script type="text/javascript">
+            (function(){
+                emailjs.init("hgiSt65uP5hIcF5JL");
+        })();
+        </script>
     </head>
     <body>
-        <form action="" class="container" id="form">
+        <form action="POST" class="container" id="form">
             <h3>Get in Touch</h3>
             
             <fieldset class="box">
@@ -64,6 +72,5 @@
 
         <div class="mousepointer"></div>
 
-        
     </body>
 </html>
