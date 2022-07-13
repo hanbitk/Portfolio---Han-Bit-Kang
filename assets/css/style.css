@@ -227,8 +227,8 @@ p {
 
 .on__off{
     position: absolute;
-    top: -20px;
-    left: 14px;
+    top: -25px;
+    left: 12px;
     display: inline-block;
     width: 135px;
     color: var(--brand-primary);
@@ -240,6 +240,20 @@ p {
     text-align: center;
     line-height: 20px;
 }
+
+.on__off::after{
+    content: "";
+    width: 0;
+    height: 0;
+    position: absolute;
+    border-left: 1px solid transparent;
+    border-right: 8px solid transparent;
+    border-top: 7px solid var(--brand-primary);
+    top: 21px;
+    left: 5px;
+}
+
+
 
 ul.navbar__menu{
     position: relative;
@@ -779,7 +793,7 @@ a.navbar__menu__item.button:hover{
         margin-bottom: 20px;
     }
 
-    ul.navbat__menu li:hover{
+    ul.navbar__menu li:hover{
         width: 100%;
         text-align: center;
     }
