@@ -249,6 +249,10 @@ textarea{
     display: none;
 }
 
+.message__danger i{
+    margin-right: 5px;
+}
+
 .message__success i{
     margin-top: 170px;
     color: var(--brand-primary);
