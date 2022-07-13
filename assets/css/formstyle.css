@@ -300,6 +300,8 @@ textarea{
     z-index: 99999;
 }
 
+/* RESPONSIVE FORM */
+
 @media screen and (max-width: 768px){
     .container{
         width: 450px;

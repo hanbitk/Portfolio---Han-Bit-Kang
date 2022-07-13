@@ -704,7 +704,7 @@ a.navbar__menu__item.button:hover{
     z-index: 99999;
 }
 
-/* REPONSIVE STYLE */
+/* REPONSIVE STYLE MAX WIDTH: 768PX */
 
 @media screen and (max-width: 768px) {
     :root{
@@ -807,6 +807,18 @@ a.navbar__menu__item.button:hover{
     }
 
     /* HOME */
+
+    #home{
+        position: relative;
+        width: 100%;
+        height: 100vh;
+        overflow: hidden;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        padding: 30px;
+        margin-top: 40px;
+    }
 
     #home img{
         display: none;
