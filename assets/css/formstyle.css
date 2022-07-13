@@ -302,7 +302,7 @@ textarea{
 
 @media screen and (max-width: 768px){
     .container{
-        width: 500px;
+        width: 450px;
         height: auto;
         background-color: var(--brand-dark-blue);
         border-radius: 10px;
@@ -317,11 +317,27 @@ textarea{
 
     .box{
         margin: 0 auto;
-        width: 450px;
+        width: 400px;
         height: auto;
         display: flex;
         flex-direction: column;
         justify-content: center;
         align-items: center;
+    }
+
+    .message__success{
+        background-color: var(--brand-dark-blue);
+        position: absolute;
+        top: 76px;
+        width: 400px;
+        height: 500px;
+        margin: 0 auto;
+        text-align: center;
+        display: none;
+    }
+    
+    .success{
+        margin-bottom: 200px;
+        color: var(--brand-primary);
     }
 }

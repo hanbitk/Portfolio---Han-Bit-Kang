@@ -793,11 +793,6 @@ a.navbar__menu__item.button:hover{
         margin-bottom: 20px;
     }
 
-    ul.navbar__menu li:hover{
-        width: 100%;
-        text-align: center;
-    }
-
     ul.navbar__menu li a{
         font-size: 16px;
     }
