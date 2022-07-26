@@ -100,8 +100,3 @@ function showHideMessage(elem){
 }
 
 showHideMessage(onoff);
-
-
-
-
-
