@@ -44,7 +44,7 @@ window.onload = function(){
             message : document.getElementById('message').value
         };
     
-        emailjs.send('service_zqvzkqi', 'template_oihu3ts', params).then(function (res){
+        emailjs.send('service_711tz37', 'template_a99wywk', params).then(function (res){
             console.log('Success! ' + res.status);
         });
     })
